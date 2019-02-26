@@ -13,7 +13,7 @@ namespace Vidly.Controllers
         // GET: Movies/Random
         public ActionResult Random()
         {
-            var movie = new Movie() { _Name = "Bourne Identity", _ID = 1}; //coming from the Movie class in Models
+            var movie = new Movie() { _Name = "Bourne Identity", _ID = 1, _Director = "IDK who the director is", _YearReleased = 2004}; //coming from the Movie class in Models
 
             ///The class MoviesController is inheriting from Controller which has these ActionResult and we are
             ///overriding the methods
@@ -42,9 +42,9 @@ namespace Vidly.Controllers
         }
 
         /// <summary>
-        /// +_______+      +_____________+      +______+
+        /// +-------+      +-------------+      +------+
         /// |Request| ---> |MVC Framework| ---> |Action|
-        /// +_______+      +_____________+      +______+
+        /// +-------+      +-------------+      +------+
         /// 
         /// Here we are creating a request (or a page) called Edit that takes in a parameter (ID in this case)
         /// that the controller (MVC) will then call an action (ActionResult [content]). The parameter (ID) 

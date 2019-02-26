@@ -4,84 +4,13 @@ using System.Linq;
 using System.Web;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 namespace Vidly.Models
 {
     public class Movie
     {
         public int _ID { get; set; }
         public string _Name { get; set; }
+        public string _Director { get; set; }
+        public int? _YearReleased { get; set; }
     }
 }
